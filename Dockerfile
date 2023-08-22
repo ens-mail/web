@@ -18,7 +18,7 @@ else \
   echo "Skip building for dev"; \
 fi
 
-EXPOSE ${PORT}
+EXPOSE 3000
 
 CMD yarn blitz prisma migrate deploy && \
     bash ./start.sh
